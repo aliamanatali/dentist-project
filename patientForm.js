@@ -55,10 +55,41 @@ fetch('patientForm.json')
                 formsList.appendChild(categoryDiv);
             }
         }
-
-        // Populate footer
-        document.querySelector('.footer-item:first-child p').innerText = data.footer.about;
-        document.getElementById('contactEmail').innerText = data.footer.contact.email;
-        document.getElementById('contactPhone').innerText = data.footer.contact.phone;
-    })
+  })
     .catch(error => console.error('Error fetching JSON:', error));
+
+    fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+          // Populate navbar links
+          const navbarLinksContainer = document.getElementById('myDropdown');
+          const navbarLinks = data.navbar.links;
+  
+          navbarLinks.forEach(link => {
+              const a = document.createElement('a');
+              a.href = link.url;
+              a.textContent = link.text;
+              navbarLinksContainer.appendChild(a);
+          });
+  
+          // Populate navbar icons with links
+          const navbarIconsContainer = document.querySelector('.navbarIcons');
+          const navbarIcons = data.navbar.icons;
+  
+          const iconLinks = navbarIconsContainer.querySelectorAll('a');
+          navbarIcons.forEach((icon, index) => {
+              if (iconLinks[index]) {
+                  iconLinks[index].href = icon.url;
+              }
+          });
+  
+          // Populate footer
+          const aboutUsIntroduction = document.querySelector('.footer-item:first-child p');
+          aboutUsIntroduction.textContent = data.footer.aboutUsIntroduction;
+  
+          const contactInfo = document.querySelectorAll('.footer-item:last-child p');
+          contactInfo[0].textContent = `Email: ${data.footer.contact.email}`;
+          contactInfo[1].textContent = `Phone: ${data.footer.contact.phone}`;
+      })
+      .catch(error => console.error('Error fetching data.json:', error));
+      

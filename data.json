@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "links": [
+            { "text": "Home", "url": "/" },
+            { "text": "About Us", "url": "/aboutUs.html" },
+            { "text": "Services", "url": "/ourServices.html" },
+            { "text": "Patient Form", "url": "/patientForm.html" }
+        ],
+        "icons": [
+            { "url": "/" },
+            { "url": "/aboutUs.html" },
+            { "url": "/ourServices.html" }
+        ]
+    },
+    "footer": {
+        "aboutUsIntroduction": "Your introduction about your practice.",
+        "contact": {
+            "email": "example@example.com",
+            "phone": "+1234567890"
+        }
+    }
+}

@@ -1,9 +1,4 @@
 {
-  "navbarLinks": {
-    "home": "#",
-    "calendar": "#",
-    "call": "#"
-  },
   "banner": {
     "title": "WELCOME TO FREMONT DENTAL!",
     "buttonText": "SCHEDULE APPOINTMENT"
@@ -23,13 +18,7 @@
     "buttonText1": "Book your Appointment Today",
     "buttonText2": "Call Us"
   },
-  "footer": {
-    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "contact": {
-      "email": "info@example.com",
-      "phone": "123-456-7890"
-    }
-  },
+  
   "socialMedia": {
     "linkedin": "https://www.linkedin.com",
     "instagram": "https://www.instagram.com",

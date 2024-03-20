@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 .topnav {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     position: absolute;
@@ -128,6 +129,7 @@
     .banner .wsite-section-elements .boldh2 {
         padding-top: 3.5rem;
     }
+
 }
 
 .poppins-bold {
@@ -462,4 +464,11 @@ flex-direction: row;
 }
 .wsite-section-elements .boldh2{
     padding-top: 6.5rem;
+}
+
+.flexNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }

@@ -13,58 +13,76 @@ function toggleMenu() {
   }
 }
 
-// Fetch data from JSON file
+// Fetch data from JSON file for home.json
 fetch('home.json')
   .then(response => response.json())
   .then(data => {
-    // Populate banner section
-    // document.getElementById('banner-title').innerText = data.banner.title;
+      // Populate banner section title dynamically
+      const bannerTitle = `<font size="7">${data.banner.title}</font><br>`;
+      document.getElementById('wsite-content-title').innerHTML = bannerTitle;
+      document.getElementById('schedule-button').innerText = data.banner.buttonText;
 
-    // // Populate navigation
-    // const navLinks = data.navigation.map(item => `<a href="${item.link}">${item.label}</a>`);
-    // document.getElementById('myTopnav').innerHTML = navLinks.join('');
+      // Populate welcome section
+      document.querySelector('.container-2 h2').innerText = data.welcomeSection.title;
+      document.querySelector('.container-2 h1').innerText = data.welcomeSection.subtitle;
+      document.querySelector('#p1').innerText = data.welcomeSection.content;
+      document.querySelector('#p2').innerText = data.welcomeSection.content2;
+      document.querySelector('#p3').innerText = data.welcomeSection.content3;
 
-     // Populate banner section title dynamically
-     const bannerTitle = `<font size="7">${data.banner.title}</font><br>`;
-     document.getElementById('wsite-content-title').innerHTML = bannerTitle;
-     document.getElementById('schedule-button').innerText = data.banner.buttonText;
- 
-    // Populate welcome section
-    document.querySelector('.container-2 h2').innerText = data.welcomeSection.title;
-    document.querySelector('.container-2 h1').innerText = data.welcomeSection.subtitle;
-    document.querySelector('#p1').innerText = data.welcomeSection.content;
-    document.querySelector('#p2').innerText = data.welcomeSection.content2;
-    document.querySelector('#p3').innerText = data.welcomeSection.content3;
+      // Populate gentle dentist section
+      document.querySelector('#aboutus-title').innerText = data.gentleDentistSection.title;
+      document.querySelector('#aboutus-content').innerText = data.gentleDentistSection.content;
 
-    // Populate gentle dentist section
-    document.querySelector('#aboutus-title').innerText = data.gentleDentistSection.title;
-    document.querySelector('#aboutus-content').innerText = data.gentleDentistSection.content;
+      // Populate schedule section
+      document.getElementById('schedule-button1').innerText = data.scheduleSection.buttonText1;
+      document.getElementById('schedule-button2').innerText = data.scheduleSection.buttonText2;
 
-    
-    // Populate schedule section
-    document.getElementById('schedule-button1').innerText = data.scheduleSection.buttonText1;
-    document.getElementById('schedule-button2').innerText = data.scheduleSection.buttonText2;
+      // Populate Social Media Links
+      document.querySelector('.flexI a[href=""]').href = data.socialMedia.linkedin;
+      document.querySelector('.flexI a[href=""]').href = data.socialMedia.instagram;
+      document.querySelector('.flexI a[href=""]').href = data.socialMedia.facebook;
+      document.querySelector('.flexI a[href=""]').href = data.socialMedia.twitter;
+      document.querySelector('.flexI a[href=""]').href = data.socialMedia.pinterest;
 
-    // Populate Social Media Links
-    document.querySelector('.flexI a[href=""]').href = data.socialMedia.linkedin;
-    document.querySelector('.flexI a[href=""]').href = data.socialMedia.instagram;
-    document.querySelector('.flexI a[href=""]').href = data.socialMedia.facebook;
-    document.querySelector('.flexI a[href=""]').href = data.socialMedia.twitter;
-    document.querySelector('.flexI a[href=""]').href = data.socialMedia.pinterest;
-
-     // Populate navbar links
-     document.getElementById('home-icon').href = data.navbarLinks.home;
-     document.getElementById('calendar-icon').href = data.navbarLinks.calendar;
-     document.getElementById('call-icon').href = data.navbarLinks.call;
-
-    // Populate footer
-    document.querySelector('.footer-item:first-child p').innerText = data.footer.about;
-    document.querySelector('.footer-item:last-child p:first-child').innerText = `Email: ${data.footer.contact.email}`;
-    document.querySelector('.footer-item:last-child p:last-child').innerText = `Phone: ${data.footer.contact.phone}`;
   })
-  .catch(error => console.error('Error fetching data:', error));
+  .catch(error => console.error('Error fetching home.json:', error));
 
-document.getElementById('schedule-button').addEventListener('click', function() {
+  fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+        // Populate navbar links
+        const navbarLinksContainer = document.getElementById('myDropdown');
+        const navbarLinks = data.navbar.links;
+
+        navbarLinks.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.url;
+            a.textContent = link.text;
+            navbarLinksContainer.appendChild(a);
+        });
+
+        // Populate navbar icons with links
+        const navbarIconsContainer = document.querySelector('.navbarIcons');
+        const navbarIcons = data.navbar.icons;
+
+        const iconLinks = navbarIconsContainer.querySelectorAll('a');
+        navbarIcons.forEach((icon, index) => {
+            if (iconLinks[index]) {
+                iconLinks[index].href = icon.url;
+            }
+        });
+
+        // Populate footer
+        const aboutUsIntroduction = document.querySelector('.footer-item:first-child p');
+        aboutUsIntroduction.textContent = data.footer.aboutUsIntroduction;
+
+        const contactInfo = document.querySelectorAll('.footer-item:last-child p');
+        contactInfo[0].textContent = `Email: ${data.footer.contact.email}`;
+        contactInfo[1].textContent = `Phone: ${data.footer.contact.phone}`;
+    })
+    .catch(error => console.error('Error fetching data.json:', error));
+
+document.getElementById('schedule-button').addEventListener('click', function () {
   const widgetContainer = document.getElementById('widget-container');
 
   if (!widgetContainer.innerHTML.trim()) {
