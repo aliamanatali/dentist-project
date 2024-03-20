@@ -1,0 +1,43 @@
+{
+    "AboutUs": {
+        "Introduction": "We are dental practice devoted to restoring and enhancing the natural beauty of your smile using conservative, state-of-the-art procedures that will result in beautiful, long-lasting smiles!"
+    },
+    "Procedures": {
+        "High Standards": [
+            "A standard of excellence in personalized dental care enables us to provide the quality dental services our patients deserve. We provide comprehensive treatment planning and use restorative and cosmetic dentistry to achieve your optimal dental health. Should a dental emergency occur, we make every effort to see and care for you as soon as possible."    
+        ],
+        "Education & Prevention": [
+            "As a practice, we are true believers that preventative care and education are the keys to optimal dental health. We strive to provide “dental health care” vs. “disease care”. That’s why we focus on thorough exams – checking the overall health of your teeth and gums, performing oral cancer exams, and taking x-rays when necessary. We also know that routine cleanings, flossing, sealants, and fluoride are all helpful in preventing dental disease. Not only are we focused on the beauty of your smile, we’re also concerned about your health. A review of your medical history can help us stay informed of your overall health, any new medications, and any illnesses that may impact your dental health."
+        ],
+        "Training & Expertise": [
+            "As your dental health professionals, we want you to be confident knowing that we are a team of highly trained and skilled clinicians. We pride ourselves on providing the care you need to keep your smile healthy. To give you the best possible service and results, we are committed to continual education and learning. We attend dental lectures, meetings, and dental conventions to stay informed of new techniques, the latest products, and the newest equipment that a modern dental office can utilize to provide state-of-the-art dental care. Also, being members of various professional dental associations helps us to stay abreast of the changes and recommendations for our profession."
+        ],
+        "A positive Experience": [
+            "Building a foundation of trust by treating our patients as special individuals is vital to our success. We understand how uneasy some patients may feel about their dental visits, and how we can make a difference in providing a relaxing and positive experience. Our entire team is dedicated to providing you with excellent, personalized care and service to make your visits as comfortable and pleasant as possible."
+        ]
+    },
+    "footer": {
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "contact": {
+            "email": "info@example.com",
+            "phone": "123-456-7890"
+        }
+    },
+    "doctors": [
+        {
+            "name": "Dr Jane",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium fugit unde nihil, ullam dolorum natus enim animi voluptates sapiente molestiae cumque eveniet eum. Dolores minima reiciendis neque corporis alias?",
+            "imageSrc": "images/container-2-img.png"
+        },
+        {
+            "name": "Hygienist",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium fugit unde nihil, ullam dolorum natus enim animi voluptates sapiente molestiae cumque eveniet eum. Dolores minima reiciendis neque corporis alias?",
+            "imageSrc": "images/Hygienist.jpg"
+        },
+        {
+            "name": "Dr Jane Smith",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laudantium fugit unde nihil, ullam dolorum natus enim animi voluptates sapiente molestiae cumque eveniet eum. Dolores minima reiciendis neque corporis alias?",
+            "imageSrc": "images/container-2-img.png"
+        }
+    ]
+}

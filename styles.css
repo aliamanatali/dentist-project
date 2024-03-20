@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.topnav {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: right;
+    display: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a.icon{
+    display: block;
+    float: right;
+}
+
+
+.topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+.topnav.responsive { 
+    position: absolute;
+}
+.topnav.responsive a.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .wsite-content-title {
+        font-size: 7vw; 
+        padding-top: 20%; 
+    }
+    .wsite-section-elements{
+        transform: translate(0%, 65%);
+        text-align: center;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+    }
+    .container{
+        background-image: url('images/Home-page-bg.jpg'); 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+      }
+
+    .flexIt{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ff .container-2{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .container-2 .ptn p{
+        margin-right: 12px;
+    }
+    .flexIt .img-container {
+        width: 95%;
+        padding: 5px;
+        
+    }
+    .flexIt .img-container img{
+        width: 98%;
+        padding-top: 10px;
+    }
+    .container-2 .para {
+        margin-right: 10px;
+        text-align: justify;
+    }
+    .container-2 .flexButtons{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .ProcedureImg{
+        background-image: url('images/ourServices-bg.jpg'); 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+    }
+    .ProcedureImgg{
+        background-image: url('images/aboutUs.jpg'); 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+    }
+    .doctor{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    .doctor .fff{
+        width: 100%;
+    }
+    .doctor p, h4{
+        margin: 0%;
+        margin-right: 0%;
+    }
+    .banner .wsite-section-elements .boldh2 {
+        padding-top: 3.5rem;
+    }
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.wsite-section-elements{
+    transform: translate(0%, 65%);
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.wsite-button button{
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    border-radius: 2px;
+  }
+  
+  .wsite-button:hover button{
+    background-color: white; /* Green */
+    color: black;
+    border-color: white;
+  }
+
+  .container{
+    height: 672px; 
+    background-image: url('images/Home-page-bg.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  .container-2{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .flexIt{
+    display: flex;
+    align-self: center;
+  }
+  .flexIt p{
+    text-align: justify;
+  }
+  .img-container{
+    width: 100%;
+    margin: 10px;
+  }
+  .img-container img{
+    width: 100%;
+    }
+  .container-2 h1{
+    text-align: center;
+  }
+  .container-2 p{
+    margin: 10px;
+    margin-right: 20px;
+  }
+  .flexButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button{
+    background-color: #f44336; 
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    margin: 4px;
+    margin-top: 12px;
+  }
+  .button:hover{
+    background-color: white; 
+    color: #f44336;
+  }
+  .ft{
+    margin-left: 30%;
+    margin-right: 30%;    
+}
+  .flexI{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .flexI img{
+    width: 2rem;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.containerr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    flex: 0 0 45%; /* Adjust as needed for spacing */
+}
+
+.footer-item h3 {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+    }
+    .ft{
+        margin-left: 20%;
+        margin-right: 20%;    
+    }
+    .mainPF{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+    .wsite-section-elements .boldh2 {
+        padding-top: 3.5rem;
+    }
+    .boldh2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+.navbarIcons{
+    display: flex;
+    /* float: right; */
+    justify-content: end;
+    align-items: center;
+    /* padding: 5px; */
+
+}
+.navbarIcons a img{
+    width: 20px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+  max-width: 600px; /* Maximum width */
+  border-radius: 10px;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 10% auto; /* Adjust margin for smaller screens */
+    padding: 10px;
+  }
+
+}
+#widget-container {
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    }
+#widget-container div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#widget-container div div {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+#widget-container div div .items-center{
+align-items: flex-start;
+flex-direction: row;
+}
+#widget-container .text-right {
+    display: flex;
+    
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.boldh2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+#boldh1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.ourSer{
+    font-family: "Poppins", sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+.ProcedureImg{
+    height: 372px; 
+    background-image: url('images/ourServices-bg.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.ProcedureImgg{
+    height: 472px; 
+    background-image: url('images/aboutUs.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.doctor{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+.ourdoctor{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+.fff{
+    width: 70%;
+    padding: 2px;
+    /* background-color: black; */
+}
+.doctor img{
+    width: 100%;
+}
+.doctor p, h4{
+    margin: 10px;
+    margin-right: 20px;
+}
+.patientForm{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.newPatientForms{
+    display: flex;
+    flex-direction: column;
+}
+.newPatientForms a{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    border-radius: 2px;
+}
+.newPatientForms p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.newPatientForms a:hover{
+    background-color: white; /* Green */
+    color: #f44336;
+    border-color: white;
+}
+.mainPF{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.wsite-section-elements .boldh2{
+    padding-top: 6.5rem;
+}

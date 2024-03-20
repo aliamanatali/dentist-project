@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lookaheadai/appointment-widget-public/dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <div class="container" >
+                <div class="banner">
+                    <div class="wsite-section-elements">
+                        <h2 id="wsite-content-title" class="wsite-content-title roboto-black boldh2"></h2>
+                        <div style="text-align:center">
+                            <div style="height: 0px; overflow: hidden;"></div>
+                            <a class="wsite-button wsite-button-large wsite-button-highlight">
+                                <br>
+                                <button id="schedule-button" class="wsite-button-inner"></button>
+                            </a>
+                            
+                            <div style="height: 0px; overflow: hidden;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+            <div class="topnav responsive" id="myTopnav">
+                <div class="navbarIcons">
+                    <a id="home-icon" href="#"><img src="images/home.png" alt="home"></a>
+                    <a id="calendar-icon" href="#"><img src="images/calendar.png" alt="calendar"></a>
+                    <a id="call-icon" href="#"><img src="images/call.png" alt="call"></a>
+                    <a href="javascript:void(0);" class="icon navbarIcons" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="myDropdown" class="dropdown-content" style="display:none">
+                    <a href="/home.html">Home</a>
+                    <a href="/aboutUs.html">About Us</a>
+                    <a href="/ourServices.html">Services</a>
+                    <a href="/patientForm.html">Patient Form</a>
+                </div>
+            </div>
+
+    </div>
+</div>
+<div class="ff">
+<div class="container-2">
+    <h2 class="boldh2" ></h2>
+    <div><h1 id="boldh1"></h1></div>
+    <div class="flexIt">
+        <div class="ptn">
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+        </div>
+        <div class="img-container"><img src="/images/container-2-img.png" alt="img"></div>
+    </div>
+
+    <br>
+    <h2 id="aboutus-title" class="boldh2" style="padding-left: 10px; padding-right: 10px">Your Gentle Dentist in Sunnyvale</h2>
+    <p id="aboutus-content" class="para"></p>
+    
+    <div class="flexButtons">
+        <button id="schedule-button1" class="button" href=""></button>
+        <button id="schedule-button2" class="button" href=""></button>
+    </div>
+    <br>
+    <div class="ft">
+        <div class="flexI">
+            <a id="linkedin-link" href="">
+                <img src="images/linkedin.png" alt="linkedin">
+            </a>
+        
+            <a id="instagram-link" href="">
+                <img src="images/instagram.png" alt="Instagram">
+            </a> 
+            
+            <a id="facebook-link" href="">
+                <img src="images/fb.png" alt="Facebook">
+            </a> 
+            
+            <a id="twitter-link" href="">
+                <img src="images/twitter.png" alt="Twitter">
+            </a> 
+            
+            <a id="pinterest-link" href="">
+                <img src="images/pintrest.png" alt="Pintrest">
+            </a>
+        </div>
+</div>
+</div>
+</div>
+<footer>
+    <div class="containerr">
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Contact</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="widget-container"></div>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>

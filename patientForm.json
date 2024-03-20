@@ -1,0 +1,34 @@
+{
+    "AboutUs": {
+        "Introduction": "Below are our forms for new patients, babies participating in the InfantSEE program, and forms to release records to our office, or to have us release records to another office. Save time at your visit by printing and filling out the appropriate forms ahead of time and bringing them to your appointment."
+    },
+    "Forms": {
+        "New Patient Forms": [
+            {
+                "name": "medical_history_form_updated.pdf",
+                "url": "/documents/welcome_form_2022.pdf"
+            },
+            {
+                "name": "medical_history_form_updated.pdf",
+                "url": "/documents/medical_history_form_updated.pdf"
+            },
+            {
+                "name": "medical_history_form_updated.pdf",
+                "url": "/documents/ror_to_shoreline_optometry.pdf"
+            }
+        ],
+        "Record Release Form": [
+            {
+                "name": "medical_history_form_updated.pdf",
+                "url": "/documents/ror_to_shoreline_optometry.pdf"
+            }
+        ]
+    },
+    "footer": {
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "contact": {
+            "email": "info@example.com",
+            "phone": "123-456-7890"
+        }
+    }
+}
