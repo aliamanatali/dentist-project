@@ -1,17 +1,22 @@
-function toggleMenu() {
-  var dropdownMenu = document.getElementById("myDropdown");
-  var menuIcon = document.querySelector('.navbarIcons .fa');
-
-  if (dropdownMenu.style.display === "none") {
-      dropdownMenu.style.display = "block";
-      menuIcon.classList.remove("fa-bars");
-      menuIcon.classList.add("fa-times");
+function myFunction() {
+  var leftMenu = document.querySelector('.lefft');
+  leftMenu.classList.toggle('show');
+  
+  var x = document.getElementById("myTopnav");
+  var menuIcon = document.getElementById("menuIcon");
+  var closeIcon = document.getElementById("closeIcon");
+  
+  if (x.className === "topnav") {
+      x.className += " responsive";
+      menuIcon.style.display = "none"; // Hide the hamburger menu icon
+      closeIcon.style.display = "inline-block"; // Show the close icon
   } else {
-      dropdownMenu.style.display = "none";
-      menuIcon.classList.remove("fa-times");
-      menuIcon.classList.add("fa-bars");
+      x.className = "topnav";
+      menuIcon.style.display = "inline-block"; // Show the hamburger menu icon
+      closeIcon.style.display = "none"; // Hide the close icon
   }
 }
+
 
 // Fetch data from JSON file for home.json
 fetch('home.json')
@@ -50,27 +55,29 @@ fetch('home.json')
   fetch('data.json')
   .then(response => response.json())
   .then(data => {
-        // Populate navbar links
-        const navbarLinksContainer = document.getElementById('myDropdown');
-        const navbarLinks = data.navbar.links;
 
-        navbarLinks.forEach(link => {
-            const a = document.createElement('a');
-            a.href = link.url;
-            a.textContent = link.text;
-            navbarLinksContainer.appendChild(a);
-        });
+    //Populate navbar links
+    const navbarLinksContainer = document.getElementById('myTopnav');
+    const navbarLinks = data.navbar.links;
 
-        // Populate navbar icons with links
-        const navbarIconsContainer = document.querySelector('.navbarIcons');
-        const navbarIcons = data.navbar.icons;
+    navbarLinks.forEach(link => {
+        const a = document.createElement('a');
+        a.href = link.url;
+        a.textContent = link.text;
+        navbarLinksContainer.appendChild(a);
+    });
 
-        const iconLinks = navbarIconsContainer.querySelectorAll('a');
-        navbarIcons.forEach((icon, index) => {
-            if (iconLinks[index]) {
-                iconLinks[index].href = icon.url;
-            }
-        });
+    // Populate navbar icons with links
+    const navbarIconsContainer = document.querySelector('.lefft');
+    const navbarIcons = data.navbar.icons;
+
+    const iconLinks = navbarIconsContainer.querySelectorAll('a');
+    navbarIcons.forEach((icon, index) => {
+        if (iconLinks[index]) {
+            iconLinks[index].href = icon.url;
+        }
+    });
+
 
         // Populate footer
         const aboutUsIntroduction = document.querySelector('.footer-item:first-child p');

@@ -1,10 +1,11 @@
 {
     "navbar": {
         "links": [
-            { "text": "Home", "url": "/" },
+            
+            { "text": "Patient Form", "url": "/patientForm.html" },
             { "text": "About Us", "url": "/aboutUs.html" },
             { "text": "Services", "url": "/ourServices.html" },
-            { "text": "Patient Form", "url": "/patientForm.html" }
+            { "text": "Home", "url": "/" }
         ],
         "icons": [
             { "url": "/" },

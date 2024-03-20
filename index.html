@@ -37,23 +37,21 @@
                 </div>
             </div>
         </div>
-        <div>
-            
-            <div class="topnav responsive" id="myTopnav">
-                <div class="navbarIcons">
-                    <a id="home-icon" href="#"><img src="images/home.png" alt="home"></a>
-                    <a id="calendar-icon" href="#"><img src="images/calendar.png" alt="calendar"></a>
-                    <a id="call-icon" href="#"><img src="images/call.png" alt="call"></a>
-                    
-                    <a href="javascript:void(0);" class="icon navbarIcons" onclick="toggleMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+        <div class="gg">
+            <div class="topnav" id="myTopnav">
+                <div class="lefft">
+                    <a href="google.com" class="left" ><img src="images/home.png" alt="home"></a>
+                    <a href="google.com" class="left" ><img src="images/calendar.png" alt="calendar"></a>
+                    <a href="google.com" class="left" ><img src="images/call.png" alt="call"></a>       
                 </div>
-                <div id="myDropdown" class="dropdown-content" style="display:none">
-                </div>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" id="menuIcon"></i>
+                    <i class="fa fa-times" id="closeIcon" style="display: none;"></i>
+                </a>
             </div>
-
-    </div>
+        </div>
+        
 </div>
 <div class="ff">
 <div class="container-2">
@@ -111,8 +109,8 @@
             </div>
             <div class="footer-item">
                 <h3>Contact</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: 123-456-7890</p>
+                <p>Email: <span id="contactEmail"></span></p>
+                <p>Phone: <span id="contactPhone"></span></p>
             </div>
         </div>
     </div>
